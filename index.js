@@ -4,7 +4,7 @@ $(window).on('load', function() {
 
 $("#map").height($(window).height() - $("#intro").height());
 
-getListings();
+getListings(0);
 
 initMap();
 
@@ -46,16 +46,23 @@ function initMap() {
         infoWindow.open(map);
       }
 
-      function getListings() {
+      function getListings(offset) {
 
         $.ajax({
           url: "https://data.sfgov.org/resource/6a9r-agq8.json",
           type: "GET",
           data: {
-            "$limit" : 5000,
+            "$limit" : 10,
+            "$offset" : offset,
             "$$app_token" : "Q4wkWXVTDAQjdY5fMw7iENcTf"
           }
         }).done(function(data) {
+          alert(data[0].applicant);
+          createTable(data);
           console.log(data);
         });
+      }
+
+      function createTable(dataTable) {
+
       }
