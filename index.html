@@ -8,11 +8,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
   <script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvDzn3LxIiAiHpLw5xqux1epwCfnT3kqY&libraries=places&callback=initMap">
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvDzn3LxIiAiHpLw5xqux1epwCfnT3kqY&libraries=places">
 </script>
 
 <script type="text/javascript" src="index.js"></script>
@@ -22,7 +27,7 @@
 </head>
 <body>
   <div class="container-fluid">
-    <div class="row">
+    <div class="row" id="intro">
       <div class="col-md-6">
         <h1>Hello San Francisco</h1>
         <h2>Here's your closest food trucks</h2>
