@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Title of the Webpage -->
+  <title>Food Truck Finder</title>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvDzn3LxIiAiHpLw5xqux1epwCfnT3kqY&libraries=places&callback=initMap">
+</script>
+
+<script type="text/javascript" src="index.js"></script>
+
+<link rel="stylesheet" type="text/css" href="index.css">
+
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6">
+        <h1>Hello San Francisco</h1>
+        <h2>Here's your closest food trucks</h2>
+      </div>
+      <div class="col-md-6">
+        <div>Enter your address
+          <form class="form-inline">
+            <div class="form-group">
+              <input type="email" class="form-control" id="addressSearch" placeholder="123 Example St, SF, CA">
+              <button type="submit" class="btn btn-default">Find Food</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div id="map"></div>
+
+    </div>
+  </div>
+</body>
+</html>
